@@ -1,5 +1,6 @@
 package com.hpup;
 
+import com.hpup.block.ConceptSculkBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -14,7 +15,9 @@ public class ConceptSculk implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info(MOD_ID + " Loaded");
+		LOGGER.info(MOD_ID + " Loading");
+
+		ConceptSculkBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {
