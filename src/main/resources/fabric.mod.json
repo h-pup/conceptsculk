@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "conceptsculk",
+	"version": "${version}",
+	"name": "ConceptSculk",
+	"description": "A mod to add cut concept art features for Sculk",
+	"authors": [
+		"h_pup"
+	],
+	"contact": {
+		"homepage": "https://github.com/h-pup"
+	},
+	"license": "MIT",
+	"icon": "assets/conceptsculk/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hpup.ConceptSculk"
+		],
+		"fabric-datagen": [
+			"com.hpup.ConceptSculkDataGenerator"
+		]
+	},
+	"mixins": [
+		"conceptsculk.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
