@@ -6,11 +6,9 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -18,8 +16,7 @@ import java.util.function.Function;
 
 public class ConceptSculkBlocks {
     public static final Block SCULK_JAW = registerBlock("sculk_jaw",
-            properties -> new DropExperienceBlock(UniformInt.of(2, 5),
-                    properties.strength(0.5f).sound(SoundType.SCULK)));
+            properties -> new SculkJawBlock(properties.strength(1.0f).sound(SoundType.SCULK)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(ConceptSculk.MOD_ID, name))));

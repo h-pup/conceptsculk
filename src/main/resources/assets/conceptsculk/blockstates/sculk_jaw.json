@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "activated=false": {
       "model": "conceptsculk:block/sculk_jaw"
+    },
+    "activated=true": {
+      "model": "conceptsculk:block/sculk_jaw_closed"
     }
   }
 }
