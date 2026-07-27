@@ -2,6 +2,8 @@ package com.hpup.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -27,6 +29,7 @@ public class SculkJawBlock extends Block {
             entity.hurt(level.damageSources().generic(), DAMAGE);
             level.setBlock(pos, onState.setValue(ACTIVATED, true), 3);
             level.scheduleTick(pos, this, COOLDOWN);
+            level.playSound(null, pos, SoundEvents.SCULK_SENSOR_BREAK, SoundSource.BLOCKS, 1.0F, 1.0F);
         }
 
         super.stepOn(level, pos, onState, entity);
