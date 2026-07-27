@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "conceptsculk:block/ancient_vase_spiral"
-    }
+    "facing=north": { "model": "conceptsculk:block/ancient_vase_spiral" },
+    "facing=south": { "model": "conceptsculk:block/ancient_vase_spiral", "y": 180 },
+    "facing=west":  { "model": "conceptsculk:block/ancient_vase_spiral", "y": 270 },
+    "facing=east":  { "model": "conceptsculk:block/ancient_vase_spiral", "y": 90 }
   }
 }
