@@ -5,3 +5,7 @@ This mod adds Sculk features from Mojang's concept art that were never added to 
 ![Sculk Jaw](https://cdn.modrinth.com/data/cached_images/99dd46198cd9ba7547e3e735a368f2bcafc28cb2.png)
 - **Ancient Vases** replace chests in Ancient Cities, with four different varients to find and loot, or mine with silk touch to decorate your base with
 ![Ancient Vases](https://cdn.modrinth.com/data/cached_images/e86e2f9178ad6672d21ce138baaa3c2f3841c2ab_0.webp)
+### Download
+[Github Releases](https://github.com/h-pup/conceptsculk/releases)
+[Modrinth](https://modrinth.com/mod/concept-sculk)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/concept-sculk)
