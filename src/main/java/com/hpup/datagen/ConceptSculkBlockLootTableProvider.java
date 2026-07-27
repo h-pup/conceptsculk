@@ -15,5 +15,6 @@ public class ConceptSculkBlockLootTableProvider extends FabricBlockLootSubProvid
     @Override
     public void generate() {
         dropWhenSilkTouch(ConceptSculkBlocks.SCULK_JAW);
+        dropWhenSilkTouch(ConceptSculkBlocks.ANCIENT_VASE);
     }
 }

@@ -18,6 +18,9 @@ public class ConceptSculkBlocks {
     public static final Block SCULK_JAW = registerBlock("sculk_jaw",
             properties -> new SculkJawBlock(properties.strength(1.0f).sound(SoundType.SCULK)));
 
+    public static final Block ANCIENT_VASE = registerBlock("ancient_vase",
+            properties -> new AncientVaseBlock(properties.strength(2.5f).sound(SoundType.DEEPSLATE_BRICKS).noOcclusion()));
+
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(ConceptSculk.MOD_ID, name))));
         registerBlockItem(name, toRegister);
