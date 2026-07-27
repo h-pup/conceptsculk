@@ -21,6 +21,15 @@ public class ConceptSculkBlocks {
     public static final Block ANCIENT_VASE = registerBlock("ancient_vase",
             properties -> new AncientVaseBlock(properties.strength(2.5f).sound(SoundType.DEEPSLATE_BRICKS).noOcclusion()));
 
+    public static final Block ANCIENT_VASE_SPIRAL = registerBlock("ancient_vase_spiral",
+            properties -> new AncientVaseBlock(properties.strength(2.5f).sound(SoundType.DEEPSLATE_BRICKS).noOcclusion()));
+
+    public static final Block ANCIENT_VASE_EARS = registerBlock("ancient_vase_ears",
+            properties -> new AncientVaseBlock(properties.strength(2.5f).sound(SoundType.DEEPSLATE_BRICKS).noOcclusion()));
+
+    public static final Block ANCIENT_VASE_TALL = registerBlock("ancient_vase_tall",
+            properties -> new TallAncientVaseBlock(properties.strength(2.5f).sound(SoundType.DEEPSLATE_BRICKS).noOcclusion()));
+
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(ConceptSculk.MOD_ID, name))));
         registerBlockItem(name, toRegister);

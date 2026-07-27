@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "conceptsculk:ancient_vase"
+    "conceptsculk:ancient_vase",
+    "conceptsculk:ancient_vase_spiral",
+    "conceptsculk:ancient_vase_ears",
+    "conceptsculk:ancient_vase_tall"
   ]
 }

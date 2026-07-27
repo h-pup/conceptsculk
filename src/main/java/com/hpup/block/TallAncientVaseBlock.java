@@ -7,13 +7,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class AncientVaseBlock extends Block {
-    public AncientVaseBlock(Properties properties) {
+public class TallAncientVaseBlock extends AncientVaseBlock{
+    public TallAncientVaseBlock(Properties properties) {
         super(properties);
     }
 
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return Block.box(3, 0, 3, 13, 10, 13);
+        return Block.box(2, 0, 2, 14, 28, 14);
     }
 }

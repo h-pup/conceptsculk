@@ -3,8 +3,8 @@
 	"parent": "minecraft:block/block",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "conceptsculk:block/ancient_vase",
-		"particle": "conceptsculk:block/ancient_vase"
+		"0": "conceptsculk:block/ancient_vase_spiral",
+		"particle": "conceptsculk:block/ancient_vase_spiral"
 	},
 	"elements": [
 		{
