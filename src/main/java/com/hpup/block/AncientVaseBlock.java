@@ -40,7 +40,6 @@ public class AncientVaseBlock extends HorizontalDirectionalBlock {
 
     @Override
     public BlockState getStateForPlacement(final BlockPlaceContext context) {
-        FluidState replacedFluidState = context.getLevel().getFluidState(context.getClickedPos());
         return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
