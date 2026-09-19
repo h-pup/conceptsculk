@@ -16,8 +16,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class AncientVaseBlock extends HorizontalDirectionalBlock {
-    public static final MapCodec<AncientVaseBlock> CODEC = Block.simpleCodec(AncientVaseBlock::new);
-
     public AncientVaseBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
@@ -26,11 +24,6 @@ public class AncientVaseBlock extends HorizontalDirectionalBlock {
     @Override
     protected void createBlockStateDefinition(final StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
-    }
-
-    @Override
-    protected MapCodec<? extends AncientVaseBlock> codec() {
-        return CODEC;
     }
 
     @Override
